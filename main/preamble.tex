@@ -1,0 +1,118 @@
+% paper
+\usepackage[a4paper]{geometry}
+% encoding
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% language
+\usepackage[english]{babel}
+% nicer text, textls
+\usepackage[protrusion=true, expansion=true]{microtype}
+% graphics
+\usepackage{graphicx}
+% compressed, sorted lists of numerical citations
+\usepackage{cite}
+% for \FloatBarrier
+\usepackage{placeins}
+% sub-figures
+\usepackage{subcaption}
+% sidewaystable
+\usepackage{rotating}
+% shrink tables to fit
+\usepackage{adjustbox}
+% colours
+\usepackage{xcolor}
+% quotations
+\usepackage{epigraph}
+\setlength{\epigraphwidth}{0.92\textwidth}
+\setlength{\epigraphrule}{0pt}
+\setlength{\beforeepigraphskip}{0\baselineskip}
+\setlength{\afterepigraphskip}{0\baselineskip}
+% improve url linebreaks
+\usepackage[hyphens]{url}
+% Bmatrix
+\usepackage{amsmath}
+% lesssim, gtrsim
+\usepackage{amssymb}
+% merged table cells
+\usepackage{multirow}
+% commas between footnote signs
+\usepackage[dont-mess-around]{fnpct}
+% hyperlinks; final keeps links in draft mode
+\usepackage[final]{hyperref}
+
+% good math mode hyphens
+% https://www.logic.at/staff/salzer/etc/mhyphen/
+\mathchardef\mhyphen="2D
+
+% subsubsection enumeration
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+% custom commands
+\newcommand{\TODO}[1]{{\color{red}TODO #1}}
+
+% units
+\newcommand*{\eV}[1][]{\mathrm{#1 e\kern-0.15ex V}}
+
+% names
+\newcommand{\atlas}{ATLAS}
+\newcommand{\cms}{CMS}
+\newcommand{\lhcb}{LHCb}
+\newcommand{\dzero}{D\O}
+\newcommand{\cern}{CERN}
+
+% particles
+\newcommand{\chargino}{\tilde\chi^\pm}
+\newcommand{\neutralino}{\tilde\chi^0}
+\newcommand{\slepton}{\tilde\ell}
+\newcommand{\gravitino}{\tilde G}
+
+% event variables
+\newcommand{\pt}{p_\mathrm{T}}
+\newcommand{\ptjone}{p_\mathrm{T}^{\,j_1}}
+
+\newcommand{\ptmiss}{\vec p_\mathrm{T}^\mathrm{\:miss}}
+\newcommand{\met}{E_\mathrm{T}^\mathrm{miss}}
+\newcommand{\metsig}{S(\met)}
+
+\newcommand{\mll}{m_{\ell\ell}}
+\newcommand{\mjj}{m_{jj}}
+\newcommand{\mbb}{m_{bb}}
+\newcommand{\mjetone}{m_{j_1}}
+
+\newcommand{\mttwo}{m_\mathrm{T2}}
+\newcommand{\mttwoll}{m_\mathrm{T2}^{\ell\ell,0}}
+
+\newcommand{\rll}{\Delta R_{\ell\ell}}
+\newcommand{\rjj}{\Delta R_{jj}}
+
+\newcommand{\nbtag}{n_{b\,\mathrm{\mhyphen tags}}}
+\newcommand{\njet}{n_\mathrm{jets}}
+
+\newcommand{\dphillmet}{\Delta\phi(\vec p_{\ell\ell}, \ptmiss)}
+\newcommand{\dphijmet}{\Delta\phi(\vec p_{j_1}, \ptmiss)}
+
+% software
+\newcommand{\sherpa}{\textsc{Sherpa}}
+\newcommand{\madgraph}{\textsc{MadGraph}}
+\newcommand{\amcatnlo}{\textsc{MG5\_aMC@NLO}}
+\newcommand{\pythia}{\textsc{Pythia}}
+\newcommand{\powheg}{\textsc{Powheg}}
+\newcommand{\powhegbox}{\textsc{Powheg\,Box}}
+\newcommand{\herwig}{\textsc{Herwig}}
+\newcommand{\histfactory}{\textsc{HistFactory}}
+\newcommand{\histfitter}{\textsc{HistFitter}}
+\newcommand{\roofit}{\textsc{RooFit}}
+\newcommand{\pyhf}{\textsc{pyhf}}
+\newcommand{\hepdata}{\textsc{HEPData}}
+\newcommand{\simpleanalysis}{\textsc{SimpleAnalysis}}
+\newcommand{\afii}{\textsc{AtlFast-ii}}
+
+% theory
+\newcommand{\lcdm}{$\Lambda\mathrm{CDM}$}
+
+% fix footnotes; based on:
+% https://tex.stackexchange.com/questions/15952/layout-of-multiple-lines-footnotes
+\makeatletter
+\renewcommand\@makefntext[1]{\leftskip=0em\hskip0em\@makefnmark#1}
+\makeatother

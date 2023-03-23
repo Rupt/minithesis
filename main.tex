@@ -1,0 +1,37 @@
+\documentclass[nobind, draft, oneside]{minithesis} % fast, no figures
+% Alternatives:
+% \documentclass[bindnopdf]{minithesis} % soft-bound
+% \documentclass[oneside]{minithesis} % hard-bound
+
+\input{main/preamble}
+
+\title{
+Minithesis: a thesis template
+}
+
+\author{Patches~O'Houlihan}
+
+\hypersetup{pdftitle={Thesis --- Patches~O'Houlihan}}
+
+\begin{document}
+
+\begin{frontmatter}
+\input{main/frontmatter}
+\end{frontmatter}
+
+\begin{mainmatter}
+\input{main/chapter_theory}
+\input{main/chapter_experiment}
+\input{main/chapter_searches}
+\input{main/chapter_project}
+\end{mainmatter}
+
+\begin{appendices}
+\input{main/appendices}
+\end{appendices}
+
+\begin{backmatter}
+\input{main/backmatter}
+\end{backmatter}
+
+\end{document}
