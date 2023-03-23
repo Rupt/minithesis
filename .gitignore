@@ -1,0 +1,5 @@
+*.pdf
+scratch/
+main.hard.tex
+main.hard.bbl
+main.hard.diff.tex
