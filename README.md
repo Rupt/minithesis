@@ -24,11 +24,7 @@ Build it with `make main.hard.pdf`.
 - `main.soft.pdf` is the soft-bound version.
 Build it with `make main.hard.pdf`.
 
-To build all three in parallel, use
-```bash
-make all -j
-
-```
+To build all three in parallel, use `make all -j`.
 
 Building the thesis produces many additional files, which we place into a
 directory named `scratch/`.
