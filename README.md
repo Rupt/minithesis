@@ -22,7 +22,7 @@ Build it with `make main.pdf`, or just `make`.
 - `main.hard.pdf` is the hard-bound version.
 Build it with `make main.hard.pdf`.
 - `main.soft.pdf` is the soft-bound version.
-Build it with `make main.hard.pdf`.
+Build it with `make main.soft.pdf`.
 
 To build all three in parallel, use `make all -j`.
 
