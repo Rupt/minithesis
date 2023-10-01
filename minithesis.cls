@@ -240,8 +240,9 @@
 
 % declaration
 \newenvironment{declaration}{%
+    \adjustwidth{1.5cm}{1.5cm}%
     \cleardoublepage%
-    \adjustwidth{1cm}{1cm}%
+    \phantomsection
     \vspace*{1.5cm}%
     \begin{center}%
     \begingroup
